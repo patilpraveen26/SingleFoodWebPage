@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        header{
+            padding-top: 20px;
+        }
+        .logo{
+            margin-left: 10%;
+        }
+        .header{
+            background-image: url("./Images/39_slide-01.jpg");
+            height: 1000px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+        .nav{
+            color: white;
+            float: right;
+            padding-top: 30px;
+            margin-right: 20px;
+           
+        }
+        .nav a:hover{
+            color: orange;
+        }
+        .nav a{
+            text-decoration: none;
+            margin-right: 15px;
+            color: white;
+            
+        }
+        .header-text{
+            color: white;
+            position: absolute;
+            top: 380px;
+            left: 500px;
+        }
+        .header-text p{
+            margin-left: 200px;
+        }
+        .header-text h1{
+            font-size: 400%;
+            margin-bottom: 0;
+        }
+        .items{
+            width: 350px;
+            display: flex;
+            margin-left: 10%;
+            
+        }
+        .photo{
+            margin: 25px;
+        }
+        .welcome h1{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            padding-top: 30px;
+        }
+        .welcome p {
+            display: flex;
+            justify-content: center;
+        }
+        .menu{
+            background-image: url(./Images/34_menu.jpg);
+            height: 850px;
+        }
+        .menu h1{
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+            color: white;
+        }
+        .menu p{
+            display: flex;
+            justify-content: center;
+            color: white;
+            padding-bottom: 50px;
+        }
+        .menu-1{
+            background-image: url("./Images/36_menu-1.jpg");
+            color: white;
+            padding: 25px 25px;
+            background-size: cover;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .menu-1 h4{
+            display: flex;
+            justify-content: center;
+        }
+        .menu-2{
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%  ;
+            display: flex;
+            height: 150px;
+        }
+        .pic{
+            border-radius: 100%;
+        }
+        .item-1{
+            display: flex;
+            margin-right: 20px;
+        }
+        .menu-3{
+            margin-top: 5%  ;
+            background-image: url("./Images/41_menu-2.jpg");
+            color: white;
+            padding: 25px 25px;
+            background-size: cover;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .menu-3 h4{
+            display: flex;
+            justify-content: center;
+        }
+        .menu-4{
+            background-image: url("./Images/40_menu-3.jpg");
+            color: white;
+            padding: 25px 25px;
+            background-size: cover;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .menu-4 h4{
+            display: flex;
+            justify-content: center;
+        }
+        .dishes {
+            display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .dish {
+            position: relative; /* Set the container to a relative position */
+            margin-right: 10px;
+        }
+
+        .price {
+            display: flex;
+            justify-content: center;
+            width: 290px;
+            position: absolute; /* Set the <span> tag to an absolute position */
+            top: 79%; /* Position it at the vertical center of the container */
+            left: 50%; /* Position it at the horizontal center of the container */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            color: white;
+            padding: 5px;
+            transform: translate(-50%, -50%); /* Center the <span> tag */
+        }
+        .services{
+            background-image: url("./Images/33_bg-gray-in.jpg");
+            height: 650px;
+
+        }
+        .service{
+            display: flex;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .ourteam{
+            display: flex;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .icons i{
+            margin-right: 20px;
+        }
+        .chefs{
+            position: relative;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            width: 250px;
+            position: absolute; /* Set the <span> tag to an absolute position */
+            top: 65%; /* Position it at the vertical center of the container */
+            left: 50%; /* Position it at the horizontal center of the container */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            color: white;
+            padding: 5px;
+            transform: translate(-50%, -50%); /* Center the <span> tag */
+        }
+        .testimonials{
+            background-image: url("./Images/42_parallax.jpg");
+            height: 650px;
+        }
+        .test{
+            display: flex;
+            margin-top: 20px;
+        }
+        .contact{
+            background-image: url("./Images/34_menu.jpg");
+            height: 500px;
+        }
+        .info{
+            color: white;
+            margin-left: 10%;
+        }
+        .info1{
+            margin-left: 25px;
+        }
+        .info1 input{
+            margin-top: 25px;
+        }
+        .info1 button{
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body >
+    <header class="header" >
+        <span class="logo"><img src="./Images/02_logo.png" alt="" /></span>
+        <nav class="nav">
+            <a href="#home">HOME</a>
+            <a href="#menu">MENU</a>
+            <a href="#dishes">DISHES</a>
+            <a href="#services">SERVICES</a>
+            <a href="#team">TEAM</a>
+            <a href="#about">ABOUT</a>
+            <a href="#testimonials">TESTIMONIALS</a>
+            <a href="#contactus">CONTACT</a>
+        </nav>
+        <div class="header-text">
+            <h1>Book your tables now!</h1>
+            <p>EAST SEAT RESERVATIONS</p>
+        </div>
+    </header>
+    <section>
+        <div id="home" class="welcome" >
+            <h1 >WELCOME TO OUR RESTAURANT</h1>
+            <p >LET'S HAVE DINNER TOGETHER</p>
+        </div>
+        <div class="items">
+            <span class="photo">
+                <img src="./Images/04_3.jpg" alt="" height="300px" width="350px">
+                <h2> BROILED FISH</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore labore ipsa obcaecati distinctio asperiores libero reprehenderit. Aperiam id </p>
+            </span>
+            <span class="photo">
+                <img src="./Images/05_deal-02.jpg" alt="" height="300px" width="350px">
+                <H2>SPRING SHRINPS</H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore labore ipsa obcaecati distinctio asperiores libero reprehenderit. Aperiam id quodeveniet</p>
+            </span>
+            <span class="photo">
+                <img src="./Images/01_deal-03.jpg" alt="" height="300px" width="350px" >
+                <H2>PIZZA</H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore labore ipsa obcaecati distinctio asperiores libero reprehenderit. Aperiam id quod </p>
+            </span>
+        </div>
+        <div id="menu" class="menu">
+                <h1> Food Menu </h1>
+                <p> EXPLORE THE FOOD</p>
+            <div class="menu-1">
+                <h4>OUR ICE CREAM</h4>
+            </div>
+            <div class="menu-2">
+                <div class="item-1">
+                    <img class="pic" src="./Images/04_3.jpg" alt="" height="150px" width="150px"/>
+                    <div style="margin-left: 20px;">
+                        <h3 style="color: white;margin-bottom: 10px;">Forest fruits icecream</h3>
+                        <p style="padding-bottom: 0;color: grey;margin-bottom: 10px;">-----------------------------------------------------------------------------</p>
+                        <p style="padding-bottom: 0;float: left;margin-bottom: 0;">All the Lorem ipsim generators on the internet tend to repeat</p><br/>
+                        <p style="color: orange;float: left;margin-top: 10px;">$ 8.50</p>
+                    </div>
+                </div>
+                <div class="item-1">
+                    <img class="pic" src="./Images/03_4.jpg" alt="" height="150px" width="150px"/>
+                    <div style="margin-left: 20px;">
+                        <h3 style="color: white;margin-bottom: 10px;">Vanilla straberry</h3>
+                        <p style="padding-bottom: 0;color: grey;margin-bottom: 10px;">----------------------------------------------------------------------------</p>
+                        <p style="padding-bottom: 0;float: left;margin-bottom: 0;">All the Lorem ipsim generators on the internet tend to repeat</p><br/>
+                        <p style="color: orange;float: left;margin-top: 10px;">$ 8.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-3">
+                <h4>FRUIT SALADS</h4>
+            </div>
+            <div class="menu-4">
+                <h4>OUR ICE CREAM</h4>
+            </div>
+        </div>
+        <div class="welcome" >
+            <h1>Ousr Dishes</h1>
+            <p >C O M E &nbsp; A N D &nbsp; E A T &nbsp; E V E R Y T H I N G</p>
+        </div>
+        <div id="dishes" class="dishes">
+            <div class="dish">
+                <img  src="./Images/13_2.jpg" alt="" height="300" width="300">
+                <h3>DISHES NAME</h3>
+                <span class="price">$8.50</span>
+            </div>
+            <div class="dish">
+                <img src="./Images/11_gallery-02.jpg" alt=""  height="300" width="300">
+                <h3>DISHES NAME</h3>
+                <span class="price">$8.50</span>
+            </div>
+            <div class="dish">
+                <img src="./Images/17_gallery-08.jpg" alt=""  height="300" width="300">
+                <h3>DISHES NAME</h3>
+                <span class="price">$8.50</span>
+            </div>
+            <div class="dish">
+                <img src="./Images/20_gallery-04.jpg" alt=""  height="300" width="300">
+                <h3>DISHES NAME</h3>
+                <span class="price">$8.50</span>
+            </div>
+        </div>
+        <div id="services" class="services">
+            <div style="padding-top: 25px;" class="welcome">
+                <h1>Our services</h1>
+                <p>S E R V I N G &nbsp;T H E &nbsp; C L I E N T A T &nbsp; B E S T</p>
+            </div>
+            <div class="service">
+                <span >
+                    <img src="./Images/Screenshot 2023-10-13 091938.png" alt="" height="100" width="100"/>
+                    <h3 > BROILED FISH</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem accusamus distinctio labore delectus, porro necessitatibus laudantium cupiditate! Neque, sapiente.</p>
+                </span>
+                <span>
+                    <img src="./Images/2.png" alt="" height="100" width="100"/>
+                    <h3 > BROILED FISH</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem accusamus distinctio labore delectus, porro necessitatibus laudantium cupiditate! Neque, sapiente.</p>
+                </span>
+                <span>
+                    <img src="./Images/3.png" alt="" height="100" width="100"/>
+                    <h3 > BROILED FISH</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem accusamus distinctio labore delectus, porro necessitatibus laudantium cupiditate! Neque, sapiente.</p>
+                </span>
+            </div>
+            <div class="service">
+                <span >
+                    <img src="./Images/4.png" alt="" height="100" width="100"/>
+                    <h3 > BROILED FISH</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem accusamus distinctio labore delectus, porro necessitatibus laudantium cupiditate! Neque, sapiente.</p>
+                </span>
+                <span>
+                    <img src="./Images/5.png" alt="" height="100" width="100"/>
+                    <h3 > BROILED FISH</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem accusamus distinctio labore delectus, porro necessitatibus laudantium cupiditate! Neque, sapiente.</p>
+                </span>
+                <span>
+                    <img src="./Images/6.png" alt="" height="100" width="100"/>
+                    <h3 > BROILED FISH</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem accusamus distinctio labore delectus, porro necessitatibus laudantium cupiditate! Neque, sapiente.</p>
+                </span>
+            </div>
+            
+        </div>
+        <div >
+            <div class="welcome" >
+                <h1 >Our Team</h1>
+                <p >W E &nbsp; L O V E &nbsp; O U R &nbsp; C H E F S</p>
+            </div>
+           <div id="team" class="ourteam">
+                <span class="chefs">
+                    <img src="./Images/29_team1.png" alt="" height="300" width="290px">
+                    <h3>JOHN DOE</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quasi.</p>
+                    <p class="icons"><i class="fa-brands fa-facebook"></i>   <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i></p>
+                    <span class="title">EXECUTIVE CHEF</span>
+                </span>
+                <span class="chefs">
+                    <img  src="./Images/28_team2.png" alt="" height="300" width="290px">
+                    <h3>ANDREW SIMMONS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quasi.</p>
+                    <p class="icons"><i class="fa-brands fa-facebook"></i>   <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i></p>
+                    <span class="title">SOUS CHEF</span>
+                </span>
+                <span class="chefs">
+                    <img  src="./Images/22_team3.png" alt="" height="300" width="290px">
+                    <h3>GARRY WILLS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quasi.</p>
+                    <p class="icons"><i class="fa-brands fa-facebook"></i>   <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i></p>
+                    <span class="title">FISH CHEF</span>
+                </span>
+                <span class="chefs">
+                    <img  src="./Images/23_team4.png" alt="" height="300" width="290px">
+                    <h3>MICHAEL SMITH</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quasi.</p>
+                    <p class="icons"><i class="fa-brands fa-facebook"> </i>  <i class="fa-brands fa-twitter"> </i>  <i class="fa-brands fa-instagram"> </i><i class="fa-brands fa-linkedin"> </i></p>
+                    <span class="title">GRILL CHEF</span>
+                </span>
+           </div>
+        </div>
+        <div id="about" class="services">
+            <div class="welcome" >
+                <h1 >About us</h1>
+                <p >W E &nbsp; C R E A T E &nbsp; H I S T O R Y</p>
+            </div>
+            <div style="display: flex;margin-left: 10%;margin-right: 10%;">
+                <span>
+                    <img src="./Images/25_about.png" alt=""/>
+                </span>
+                <span style="margin-left: 30px;line-height: 25px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id ullamcorper mauris. In pulvinar turpis a justo facilisis ultrices.Suspendisse et arcu odio.
+                        In ut ex vel nisi facilisis eleifend ut nec nunc. Aliquam erat volutpat Aenean faucibus sem vel vehicula suscipit. Morbi et sapien a magna vulputate eleifend.
+                         Quisque at augue justo. Mauris scelerisque id velit ut congue. Donec ut semper ipsum. Suspendisse potenti.
+                          Sed ipsum urna, varius eu nulla ut suscipit vestibulum nulla. In sit amet fermentum This is the content of the downloaded file.
+                    </p>
+                    <p>
+                        Nam id ullamcorper mauris. In pulvinar turpis a justo facilisis ultrices. Suspendisse et arcu odio. In ut ex vel nisi facilisis eleifend ut nec nunc.
+                         Aliquam erat volutpat. Aenean faucibus sem vel vehicula suscipit. Morbi et sapien a magna vulputate eleifend. Quisque at augue justo Mauris scelerisque id velit ut congue.
+                          Donec ut semper ipsum. Suspendisse potenti.
+                    </p>
+                    <p>
+                        Nam id ullamcorper mauris. In pulvinar turpis a justo facilisis ultrices. Suspendisse et arcu odio. In ut ex vel nisi facilisis eleifend ut nec nunc.
+                         Aliquam erat volutpat. Aenean faucibus sem vel vehicula suscipit. Morbi et sapien a magna vulputate eleifend. Quisque at augue justo Mauris scelerisque id velit ut congue.
+                          Donec ut semper ipsum. Suspendisse potenti.
+                    </p>
+                </span>
+            </div>
+        </div>
+        <div id="testimonials" class="testimonials">
+            <div class="welcome" >
+                <h1 style="color: white;" >Our Testimonials</h1>
+                <p  style="color: white;">W H A T &nbsp; O U R &nbsp; C U S T O M E R &nbsp; s A I D</p>
+            </div>
+            <div class="test" style="margin-left: 10%;margin-right: 10%;">
+                <span class="test">
+                    <img class="pic" src="./Images/24_4.jpg" alt="" height="100px" width="100px"/>
+                    <div style="margin-left: 20px;">
+                        <h3 style="color: white;margin-bottom: 0px;">John <span style="color: orange;">CEO/co Founder</span></h3>
+                        <p style="padding-bottom: 0;color: grey;margin: 0px 0px;">-----------------------------------------------------------------------------</p>
+                        <p style="color: white;margin-top: 0;">Lorem ipsum dolor sit amet consectetur , adipisicing elit. Doloremque, laboriosam?</p>
+                    </div>
+                </span>
+                <span class="test">
+                    <img class="pic" src="./Images/27_3.jpg" alt="" height="100px" width="100px"/>
+                    <div style="margin-left: 20px;">
+                        <h3 style="color: white;margin-bottom: 0px;">John <span style="color: orange;">CEO/co Founder</span></h3>
+                        <p style="padding-bottom: 0;color: grey;margin: 0px 0px;">-----------------------------------------------------------------------------</p>
+                        <p style="color: white;margin-top: 0;">Lorem ipsum dolor sit amet consectetur , adipisicing elit. Doloremque, laboriosam?</p>
+                    </div>
+                </span>
+            </div>
+            <div class="test" style="margin-left: 10%;margin-right: 10%;">
+                <span class="test">
+                    <img class="pic" src="./Images/38_2.jpg" alt="" height="100px" width="100px"/>
+                    <div style="margin-left: 20px;">
+                        <h3 style="color: white;margin-bottom: 0px;">John <span style="color: orange;">CEO/co Founder</span></h3>
+                        <p style="padding-bottom: 0;color: grey;margin: 0px 0px;">-----------------------------------------------------------------------------</p>
+                        <p style="color: white;margin-top: 0;">Lorem ipsum dolor sit amet consectetur , adipisicing elit. Doloremque, laboriosam?</p>
+                    </div>
+                </span>
+                <span class="test">
+                    <img class="pic" src="./Images/32_1.jpg" alt="" height="100px" width="100px"/>
+                    <div style="margin-left: 20px;">
+                        <h3 style="color: white;margin-bottom: 0px;">John <span style="color: orange;">CEO/co Founder</span></h3>
+                        <p style="padding-bottom: 0;color: grey;margin: 0px 0px;">-----------------------------------------------------------------------------</p>
+                        <p style="color: white;margin-top: 0;">Lorem ipsum dolor sit amet consectetur , adipisicing elit. Doloremque, laboriosam?</p>
+                    </div>
+                </span>
+            </div>
+            <div class="test" style="margin-left: 10%;margin-right: 10%;">
+                <span class="test">
+                    <img class="pic" src="./Images/24_4.jpg" alt="" height="100px" width="100px"/>
+                    <div style="margin-left: 20px;">
+                        <h3 style="color: white;margin-bottom: 0px;">John <span style="color: orange;">CEO/co Founder</span></h3>
+                        <p style="padding-bottom: 0;color: grey;margin: 0px 0px;">-----------------------------------------------------------------------------</p>
+                        <p style="color: white;margin-top: 0;">Lorem ipsum dolor sit amet consectetur , adipisicing elit. Doloremque, laboriosam?</p>
+                    </div>
+                </span>
+                <span class="test">
+                    <img class="pic" src="./Images/27_3.jpg" alt="" height="100px" width="100px"/>
+                    <div style="margin-left: 20px;">
+                        <h3 style="color: white;margin-bottom: 0px;">John <span style="color: orange;">CEO/co Founder</span></h3>
+                        <p style="padding-bottom: 0;color: grey;margin: 0px 0px;">-----------------------------------------------------------------------------</p>
+                        <p style="color: white;margin-top: 0;">Lorem ipsum dolor sit amet consectetur , adipisicing elit. Doloremque, laboriosam?</p>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div id="contactus" class="contact">
+            <div class="welcome" >
+                <h1 style="color: white;margin-top: 0;" >Contact US</h1>
+                <p  style="color: white;">Y O U &nbsp; C A N &nbsp; S E N D &nbsp; U S &nbsp; M E S S A G E</p>
+            </div>
+           <div style="display: flex;">
+                <span class="info">
+                    <h2 style="color: orange;">Contact Detail</h2>
+                    <h4>Don't be shy do contact us about everything and anything,we will be glad to answer your <br> questions about kataleya</h4>
+                    <h4> <i class="fa-solid fa-house"></i> 445 street,in address wherever you are</h4>
+                    <h4> <i class="fa-solid fa-phone"></i> Phone:+386 40 555 666</h4>
+                    <h4> <i class="fa-solid fa-envelope"></i> Fax:+386 10 555 66677</h4>
+                    <h4>Email:<span style="color: orange;"> info@example.com</span></h4>
+                </span>
+                <span class="info1">
+                    <input type="text" placeholder="Name" style="height: 40px;width: 500px;"/><br/>
+                    <input type="email" placeholder="Email"style="height: 40px;width: 500px;"/><br/>
+                    <input type="text" placeholder="Message" style="height: 70px;width: 500px;"/><br/>
+                    <button type="submit" style="background-color: orange;color: white;height: 50px;width: 100px;">SEND</button>
+                </span>
+           </div>
+        </div>
+    </section>
+</body>
+</html>
