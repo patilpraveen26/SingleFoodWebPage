@@ -1,0 +1,213 @@
+header{
+    padding-top: 20px;
+}
+.logo{
+    margin-left: 10%;
+}
+.header{
+    background-image: url("./Images/39_slide-01.jpg");
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.nav{
+    color: white;
+    float: right;
+    padding-top: 30px;
+    margin-right: 20px;
+   
+}
+.nav a:hover{
+    color: orange;
+}
+.nav a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;
+    
+}
+.header-text{
+    color: white;
+    position: absolute;
+    top: 380px;
+    left: 500px;
+}
+.header-text p{
+    margin-left: 200px;
+}
+.header-text h1{
+    font-size: 400%;
+    margin-bottom: 0;
+}
+.items{
+    width: 350px;
+    display: flex;
+    margin-left: 10%;
+    
+}
+.photo{
+    margin: 25px;
+}
+.welcome h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+.welcome p {
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    background-image: url(./Images/34_menu.jpg);
+    height: 850px;
+}
+.menu h1{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    color: white;
+}
+.menu p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 50px;
+}
+.menu-1{
+    background-image: url("./Images/36_menu-1.jpg");
+    color: white;
+    padding: 25px 25px;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.menu-1 h4{
+    display: flex;
+    justify-content: center;
+}
+.menu-2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%  ;
+    display: flex;
+    height: 150px;
+}
+.pic{
+    border-radius: 100%;
+}
+.item-1{
+    display: flex;
+    margin-right: 20px;
+}
+.menu-3{
+    margin-top: 5%  ;
+    background-image: url("./Images/41_menu-2.jpg");
+    color: white;
+    padding: 25px 25px;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.menu-3 h4{
+    display: flex;
+    justify-content: center;
+}
+.menu-4{
+    background-image: url("./Images/40_menu-3.jpg");
+    color: white;
+    padding: 25px 25px;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.menu-4 h4{
+    display: flex;
+    justify-content: center;
+}
+.dishes {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.dish {
+    position: relative; /* Set the container to a relative position */
+    margin-right: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    position: absolute; /* Set the <span> tag to an absolute position */
+    top: 79%; /* Position it at the vertical center of the container */
+    left: 50%; /* Position it at the horizontal center of the container */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    padding: 5px;
+    transform: translate(-50%, -50%); /* Center the <span> tag */
+}
+.services{
+    background-image: url("./Images/33_bg-gray-in.jpg");
+    height: 650px;
+
+}
+.service{
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.ourteam{
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.icons i{
+    margin-right: 20px;
+}
+.chefs{
+    position: relative;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    position: absolute; /* Set the <span> tag to an absolute position */
+    top: 65%; /* Position it at the vertical center of the container */
+    left: 50%; /* Position it at the horizontal center of the container */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    padding: 5px;
+    transform: translate(-50%, -50%); /* Center the <span> tag */
+}
+.testimonials{
+    background-image: url("./Images/42_parallax.jpg");
+    height: 650px;
+}
+.test{
+    display: flex;
+    margin-top: 20px;
+}
+.contact{
+    background-image: url("./Images/34_menu.jpg");
+    height: 500px;
+}
+.info{
+    color: white;
+    margin-left: 10%;
+}
+.info1{
+    margin-left: 25px;
+}
+.info1 input{
+    margin-top: 25px;
+}
+.info1 button{
+    margin-top: 25px;
+}
